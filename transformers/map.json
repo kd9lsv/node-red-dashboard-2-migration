@@ -9,5 +9,6 @@
   "ui_text": "uiText",
   "ui_text_input": "uiTextInput",
   "ui_chart": "uiChart",
-  "ui_gauge": "uiGauge"
+  "ui_gauge": "uiGauge",
+  "ui_led" : "uiLed"
 }

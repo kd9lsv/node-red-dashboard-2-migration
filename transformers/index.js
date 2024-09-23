@@ -9,6 +9,7 @@ module.exports = {
     uiText: require('./nodes/ui-text'),
     uiTextInput: require('./nodes/ui-text-input'),
     uiChart: require('./nodes/ui-chart'),
-    uiGauge: require('./nodes/ui-gauge')
+    uiGauge: require('./nodes/ui-gauge'),
+    uiLed: require('./nodes/ui-led')
 }
 
