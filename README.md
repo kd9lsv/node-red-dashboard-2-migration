@@ -21,6 +21,9 @@ Please note that this script does not cover everything, see below for a list of 
     - `.tooltip` is not supported
 - `ui_chart` - converted to Dashboard 2.0's `ui-chart`
 - `ui_led` - converted to Dashboard 2.0's `ui-led`
+- `ui_audio` - converted to Dashboard 2.0's `ui-audio`
+    - `TTS` is not supported
+- `ui_gauge` - converted to Dashboard 2.0's `ui-gauge`
 
 ### Config Nodes
 
@@ -37,8 +40,6 @@ Please note that this script does not cover everything, see below for a list of 
 - `ui_numeric` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/20)
 - `ui_date_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/22)
 - `ui_colour_picker` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/23)
-- `ui_gauge` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/26)
-- `ui_audio` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/28)
 - `ui_toast` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/29)
 - `ui_control` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/30)
 - `ui_template` - [link](https://github.com/FlowFuse/node-red-dashboard-2-migration/issues/31)
