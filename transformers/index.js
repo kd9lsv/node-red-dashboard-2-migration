@@ -12,6 +12,7 @@ module.exports = {
     uiGauge: require('./nodes/ui-gauge'),
     uiLed: require('./nodes/ui-led'),
     uiAudio: require('./nodes/ui-audio'),
-    uiControl: require('./nodes/ui-control')
+    uiControl: require('./nodes/ui-control'),
+    uiNotification: require('./nodes/ui-notification')
 }
 
