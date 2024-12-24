@@ -218,10 +218,74 @@ describe('Dashboard Migration Script', function () {
             }
         })
     })
+    describe('UI LED:', function () {
+        const input = utils.getByType(migratedFlow, 'ui-led')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-led')[0]
 
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
+    describe('UI Number Input', function () {
+        const input = utils.getByType(migratedFlow, 'ui-number-input')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-number-input')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
     describe('UI Gauge:', function () {
         const input = utils.getByType(migratedFlow, 'ui-gauge')[0]
         const input1 = utils.getByType(basicLayoutAfter, 'ui-gauge')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
+    describe('UI Audio:', function () {
+        const input = utils.getByType(migratedFlow, 'ui-audio')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-audio')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
+    describe('UI Control', function () {
+        const input = utils.getByType(migratedFlow, 'ui-control')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-control')[0]
+
+        const excludeFromChecks = ['id', 'group']
+        Object.keys(input).forEach((prop) => {
+            if (!excludeFromChecks.includes(prop)) {
+                it('should set ' + prop + ' correctly ', function () {
+                    input[prop].should.eql(input1[prop])
+                })
+            }
+        })
+    })
+    describe('UI Notification', function () {
+        const input = utils.getByType(migratedFlow, 'ui-notification')[0]
+        const input1 = utils.getByType(basicLayoutAfter, 'ui-notification')[0]
 
         const excludeFromChecks = ['id', 'group']
         Object.keys(input).forEach((prop) => {
