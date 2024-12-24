@@ -1,381 +1,552 @@
 [
-    {
-        "id": "79a7c26e91eca376",
-        "type": "ui_template",
-        "z": "94d6d107f1742efb",
-        "d": true,
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 320,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fed8f28d75ee666f",
-        "type": "ui-text",
-        "z": "94d6d107f1742efb",
-        "group": "856a31bba370e7fc",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "label:",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": true,
-        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
-        "fontSize": 16,
-        "color": "#ff0000",
-        "className": "",
-        "x": 270,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "560a743fcfcea413",
-        "type": "ui-form",
-        "z": "94d6d107f1742efb",
-        "name": "",
-        "group": "ed865e310a46f41b",
-        "label": "",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Text Input",
-                "key": "text",
-                "type": "text",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "text": ""
-        },
-        "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
-        "resetOnSubmit": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 150,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "048f08dfd03526fd",
-        "type": "ui-button",
-        "z": "94d6d107f1742efb",
-        "group": "f663864dda246564",
-        "name": "",
-        "label": "Button Label",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "home",
-        "iconPosition": "left",
-        "payload": "static-payload",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 330,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5be48f9b12081c54",
-        "type": "ui-dropdown",
-        "z": "94d6d107f1742efb",
-        "group": "f663864dda246564",
-        "name": "",
-        "label": "My Dropdown",
-        "tooltip": "",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": true,
-        "chips": false,
-        "clearable": false,
-        "options": [
-            {
-                "label": "Option 1",
-                "value": "option1",
-                "type": "str"
-            },
-            {
-                "label": "Option 2",
-                "value": "option2",
-                "type": "str"
-            },
-            {
-                "label": "Option 3",
-                "value": "option3",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 340,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ecb1c0c7b3b72bf7",
-        "type": "ui-switch",
-        "z": "94d6d107f1742efb",
-        "name": "",
-        "label": "My Switch",
-        "group": "f663864dda246564",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "wifi",
-        "oncolor": "green",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "wifi",
-        "offcolor": "red",
-        "x": 330,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3eb49d234b7a403c",
-        "type": "ui-slider",
-        "z": "94d6d107f1742efb",
-        "group": "f663864dda246564",
-        "name": "",
-        "label": "My Slider",
-        "tooltip": "",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": "true",
-        "showTicks": "always",
-        "min": 0,
-        "max": "100",
-        "step": "10",
-        "color": "",
-        "colorTrack": "",
-        "colorThumb": "",
-        "className": "",
-        "x": 160,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b82fbbff66011591",
-        "type": "ui-text-input",
-        "z": "94d6d107f1742efb",
-        "group": "f663864dda246564",
-        "name": "",
-        "label": "My Input",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": false,
-        "sendOnDelay": true,
-        "sendOnBlur": true,
-        "sendOnEnter": false,
-        "className": "",
-        "x": 160,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1831c1945f33a193",
-        "type": "ui-chart",
-        "z": "b210791026f9bf3f",
-        "group": "856a31bba370e7fc",
-        "name": "My Favorite Chart",
-        "label": "My Favorite Chart",
-        "order": 4,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "property",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "HH:mm:ss",
-        "yAxisLabel": "",
-        "yAxisProperty": "",
-        "ymin": "",
-        "ymax": "",
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": "4",
-        "className": "",
-        "x": 760,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "71985e85957f8be3",
-        "type": "ui-led",
-        "z": "78ee589ecd091670",
-        "name": "My Led",
-        "group": "f663864dda246564",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "label": "My Led",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "states": [
-            {
-                "value": "false",
-                "valueType": "bool",
-                "color": "#ff0000"
-            },
-            {
-                "value": "true",
-                "valueType": "bool",
-                "color": "#00ff00"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showBorder": true,
-        "showGlow": true,
-        "x": 980,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "856a31bba370e7fc",
-        "type": "ui-group",
-        "name": "My Group",
-        "page": "2543b03fbc35fb72",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": true,
-        "disabled": false
-    },
-    {
-        "id": "2543b03fbc35fb72",
-        "type": "ui-page",
-        "name": "My Page",
-        "ui": "69c6fbb86f6e5033",
-        "path": "/my-page",
-        "icon": "dashboard",
-        "layout": "flex",
-        "theme": "0996ab6125fd4a4b",
-        "order": 0,
-        "className": "",
-        "visible": true,
-        "disabled": false
-    },
-    {
-        "id": "69c6fbb86f6e5033",
-        "type": "ui-base",
-        "name": "My Dashboard",
-        "path": "/dashboard",
-        "includeClientData": true,
-        "acceptsClientConfig": [
-            "ui-notification",
-            "ui-control"
-        ],
-        "showPathInSidebar": false,
-        "navigationStyle": "default",
-        "titleBarStyle": "default"
-    },
-    {
-        "id": "0996ab6125fd4a4b",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    }
+	{
+		"id": "fc7feee40ffe3606",
+		"type": "ui-base",
+		"name": "My Dashboard",
+		"path": "/dashboard",
+		"includeClientData": true,
+		"acceptsClientConfig": [
+			"ui-notification",
+			"ui-control"
+		],
+		"showPathInSidebar": false,
+		"navigationStyle": "default",
+		"titleBarStyle": "default"
+	},
+	{
+		"id": "b8cac28961a56df9",
+		"type": "ui-theme",
+		"name": "Default Theme",
+		"colors": {
+			"surface": "#ffffff",
+			"primary": "#0094CE",
+			"bgPage": "#eeeeee",
+			"groupBg": "#ffffff",
+			"groupOutline": "#cccccc"
+		},
+		"sizes": {
+			"pagePadding": "12px",
+			"groupGap": "12px",
+			"groupBorderRadius": "4px",
+			"widgetGap": "12px"
+		}
+	},
+	{
+		"id": "67630f346784e836",
+		"type": "tab",
+		"label": "My Migration Before",
+		"disabled": false,
+		"info": "",
+		"env": [
+
+		]
+	},
+	{
+		"id": "914b363385079141",
+		"type": "ui_template",
+		"z": "67630f346784e836",
+		"name": "",
+		"order": 0,
+		"width": 0,
+		"height": 0,
+		"format": "<div ng-bind-html=\"msg.payload\"></div>",
+		"storeOutMessages": true,
+		"fwdInMessages": true,
+		"resendOnRefresh": true,
+		"templateScope": "local",
+		"className": "",
+		"x": 320,
+		"y": 640,
+		"wires": [
+			[
+
+			]
+		],
+		"d": true
+	},
+	{
+		"id": "9a891ed0618cf2d9",
+		"type": "ui-text",
+		"z": "67630f346784e836",
+		"group": "b191960874c7c44e",
+		"order": 0,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "label:",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"style": true,
+		"font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+		"fontSize": 16,
+		"color": "#ff0000",
+		"x": 310,
+		"y": 600,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "152540e8cbdabe58",
+		"type": "ui-form",
+		"z": "67630f346784e836",
+		"name": "",
+		"label": "",
+		"group": "b191960874c7c44e",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"options": [
+			{
+				"label": "Text Input",
+				"key": "text",
+				"type": "text",
+				"required": true,
+				"rows": null
+			}
+		],
+		"formValue": {
+			"text": ""
+		},
+		"payload": "",
+		"submit": "submit",
+		"cancel": "cancel",
+		"topic": "topic",
+		"topicType": "msg",
+		"splitLayout": "",
+		"className": "",
+		"x": 310,
+		"y": 280,
+		"wires": [
+			[
+
+			]
+		],
+		"resetOnSubmit": true
+	},
+	{
+		"id": "a4c0c9b86ccce978",
+		"type": "ui-button",
+		"z": "67630f346784e836",
+		"name": "",
+		"group": "b191960874c7c44e",
+		"order": 3,
+		"width": 0,
+		"height": 0,
+		"label": "Button Label",
+		"tooltip": "",
+		"color": "",
+		"bgcolor": "",
+		"className": "",
+		"icon": "home",
+		"payload": "static-payload",
+		"payloadType": "str",
+		"topic": "topic",
+		"topicType": "msg",
+		"x": 330,
+		"y": 120,
+		"wires": [
+			[
+
+			]
+		],
+		"emulateClick": false,
+		"iconPosition": "left"
+	},
+	{
+		"id": "f83a81c3e94a0d6b",
+		"type": "ui-dropdown",
+		"z": "67630f346784e836",
+		"name": "",
+		"label": "My Dropdown",
+		"tooltip": "",
+		"group": "b191960874c7c44e",
+		"order": 4,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"multiple": true,
+		"options": [
+			{
+				"label": "Option 1",
+				"value": "option1",
+				"type": "str"
+			},
+			{
+				"label": "Option 2",
+				"value": "option2",
+				"type": "str"
+			},
+			{
+				"label": "Option 3",
+				"value": "option3",
+				"type": "str"
+			}
+		],
+		"payload": "",
+		"topic": "topic",
+		"topicType": "msg",
+		"className": "",
+		"x": 340,
+		"y": 240,
+		"wires": [
+			[
+
+			]
+		],
+		"chips": false,
+		"clearable": false
+	},
+	{
+		"id": "e20fcb4e3ac463ad",
+		"type": "ui-switch",
+		"z": "67630f346784e836",
+		"name": "",
+		"label": "My Switch",
+		"group": "b191960874c7c44e",
+		"order": 5,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"style": "",
+		"onvalue": "true",
+		"onvalueType": "bool",
+		"onicon": "wifi",
+		"oncolor": "green",
+		"offvalue": "false",
+		"offvalueType": "bool",
+		"officon": "wifi",
+		"offcolor": "red",
+		"className": "",
+		"x": 330,
+		"y": 520,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "dd7f8933756ef0fd",
+		"type": "ui-slider",
+		"z": "67630f346784e836",
+		"name": "",
+		"label": "My Slider",
+		"tooltip": "",
+		"group": "b191960874c7c44e",
+		"order": 6,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"outs": "all",
+		"topic": "topic",
+		"topicType": "msg",
+		"min": 0,
+		"max": "100",
+		"step": "10",
+		"className": "",
+		"x": 320,
+		"y": 480,
+		"wires": [
+			[
+
+			]
+		],
+		"thumbLabel": "true",
+		"showTicks": "always",
+		"color": "",
+		"colorTrack": "",
+		"colorThumb": ""
+	},
+	{
+		"id": "7d0b5b403f9200fe",
+		"type": "ui-text-input",
+		"z": "67630f346784e836",
+		"name": "",
+		"label": "My Input",
+		"group": "b191960874c7c44e",
+		"order": 7,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"mode": "text",
+		"delay": 300,
+		"topic": "topic",
+		"sendOnBlur": true,
+		"className": "",
+		"topicType": "msg",
+		"x": 320,
+		"y": 560,
+		"wires": [
+			[
+
+			]
+		],
+		"sendOnDelay": true,
+		"sendOnEnter": false
+	},
+	{
+		"id": "11092ff01900b104",
+		"type": "ui-chart",
+		"z": "67630f346784e836",
+		"name": "My Favorite Chart",
+		"group": "b191960874c7c44e",
+		"order": 3,
+		"width": 6,
+		"height": 4,
+		"label": "My Favorite Chart",
+		"chartType": "line",
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "3600",
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"className": "abcd",
+		"x": 350,
+		"y": 160,
+		"wires": [
+			[
+
+			]
+		],
+		"xAxisFormatType": "HH:mm:ss",
+		"showLegend": "false",
+		"category": "topic",
+		"categoryType": "msg",
+		"xAxisLabel": "",
+		"xAxisFormat": "",
+		"xAxisProperty": "",
+		"xAxisPropertyType": "property",
+		"xAxisType": "time",
+		"yAxisLabel": "",
+		"yAxisProperty": "",
+		"textColor": [
+			"#666666"
+		],
+		"textColorDefault": true,
+		"gridColor": [
+			"#e5e5e5"
+		],
+		"gridColorDefault": true,
+		"action": "append",
+		"stackSeries": false,
+		"pointShape": "circle",
+		"pointRadius": 4
+	},
+	{
+		"id": "d640dcf00ab9a978",
+		"type": "ui-audio",
+		"z": "67630f346784e836",
+		"name": "My Audio Out",
+		"group": "b191960874c7c44e",
+		"voice": "Microsoft David - English (United States)",
+		"x": 340,
+		"y": 80,
+		"wires": [
+
+		],
+		"autoplay": "",
+		"loop": "off",
+		"muted": "off",
+		"src": "",
+		"order": 0,
+		"width": 0,
+		"height": 0
+	},
+	{
+		"id": "b34265ee5ec7df3f",
+		"type": "ui-led",
+		"z": "67630f346784e836",
+		"order": 8,
+		"group": "b191960874c7c44e",
+		"width": 0,
+		"height": 0,
+		"label": "My Led",
+		"labelPlacement": "left",
+		"labelAlignment": "left",
+		"allowColorForValueInMessage": false,
+		"shape": "circle",
+		"showGlow": true,
+		"name": "My Led",
+		"x": 320,
+		"y": 360,
+		"wires": [
+
+		],
+		"states": [
+			{
+				"color": "#ff0000",
+				"value": "false",
+				"valueType": "bool"
+			},
+			{
+				"color": "#008000",
+				"value": "true",
+				"valueType": "bool"
+			}
+		],
+		"showBorder": true
+	},
+	{
+		"id": "3cef1870d65a9462",
+		"type": "ui-control",
+		"z": "67630f346784e836",
+		"name": "My Control",
+		"events": "change",
+		"x": 330,
+		"y": 200,
+		"wires": [
+			[
+
+			]
+		],
+		"ui": "fc7feee40ffe3606"
+	},
+	{
+		"id": "ca93de861ac43763",
+		"type": "ui-gauge",
+		"z": "67630f346784e836",
+		"name": "My Favorite Gauge",
+		"group": "b191960874c7c44e",
+		"order": 12,
+		"width": 0,
+		"height": 0,
+		"gtype": "gauge-half",
+		"title": "gauge",
+		"label": "units",
+		"min": 0,
+		"max": 10,
+		"diff": false,
+		"className": "",
+		"x": 350,
+		"y": 320,
+		"wires": [
+
+		],
+		"units": "units",
+		"segments": [
+			{
+				"from": 0,
+				"colors": "#00b500"
+			},
+			{
+				"from": 4,
+				"color": "#e6e600"
+			},
+			{
+				"from": 7,
+				"color": "#ca3838"
+			}
+		],
+		"prefix": "",
+		"suffix": " %",
+		"icon": "",
+		"sizeThickness": 16,
+		"sizeGap": 4,
+		"sizeKeyThickness": 8,
+		"styleRounded": true,
+		"styleGlow": false
+	},
+	{
+		"id": "c147bc430094baf8",
+		"type": "ui-notification",
+		"z": "67630f346784e836",
+		"position": "center center",
+		"displayTime": "3",
+		"outputs": 1,
+		"ok": "OK",
+		"cancel": "",
+		"raw": false,
+		"className": "",
+		"name": "",
+		"x": 330,
+		"y": 400,
+		"wires": [
+			[
+
+			]
+		],
+		"allowConfirm": true,
+		"allowDismiss": true,
+		"confirmText": "OK",
+		"dismissText": "",
+		"colorDefault": true,
+		"color": null,
+		"ui": "fc7feee40ffe3606",
+		"showCountdown": false
+	},
+	{
+		"id": "940a12ce19bf2212",
+		"type": "ui-number-input",
+		"z": "67630f346784e836",
+		"name": "",
+		"label": "numeric",
+		"tooltip": "",
+		"group": "b191960874c7c44e",
+		"order": 13,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"min": 0,
+		"max": 10,
+		"step": 1,
+		"className": "",
+		"x": 320,
+		"y": 440,
+		"wires": [
+			[
+
+			]
+		],
+		"sendOnBlue": true,
+		"sendOnEnter": true,
+		"clearable": false,
+		"icon": "",
+		"iconPosition": "left",
+		"iconInnerPosition": "inside",
+		"spinner": "default"
+	},
+	{
+		"id": "b191960874c7c44e",
+		"type": "ui-group",
+		"name": "My Group",
+		"order": 1,
+		"width": "6",
+		"className": "",
+		"page": "ad0a059483490877",
+		"showTitle": true,
+		"height": "1",
+		"visible": true,
+		"disabled": false
+	},
+	{
+		"id": "ad0a059483490877",
+		"type": "ui-page",
+		"name": "My Page",
+		"icon": "dashboard",
+		"disabled": false,
+		"visible": true,
+		"ui": "fc7feee40ffe3606",
+		"path": "/my-page",
+		"theme": "b8cac28961a56df9",
+		"layout": "flex",
+		"order": 0,
+		"className": ""
+	}
 ]

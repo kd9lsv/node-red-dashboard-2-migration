@@ -1,8 +1,16 @@
 [
     {
+        "id": "6e158c58de737d66",
+        "type": "tab",
+        "label": "My Migration Before",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "79a7c26e91eca376",
         "type": "ui_template",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "name": "",
         "order": 0,
         "width": 0,
@@ -14,7 +22,7 @@
         "templateScope": "local",
         "className": "",
         "x": 320,
-        "y": 200,
+        "y": 640,
         "wires": [
             []
         ]
@@ -22,7 +30,7 @@
     {
         "id": "fed8f28d75ee666f",
         "type": "ui_text",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "group": "856a31bba370e7fc",
         "order": 0,
         "width": 0,
@@ -36,14 +44,14 @@
         "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
         "fontSize": 16,
         "color": "#ff0000",
-        "x": 270,
-        "y": 100,
+        "x": 310,
+        "y": 600,
         "wires": []
     },
     {
         "id": "ca592363e478c44a",
         "type": "ui_form",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "name": "",
         "label": "",
         "group": "856a31bba370e7fc",
@@ -69,8 +77,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 150,
-        "y": 160,
+        "x": 310,
+        "y": 280,
         "wires": [
             []
         ]
@@ -78,7 +86,7 @@
     {
         "id": "e51c3b80c16ecc5a",
         "type": "ui_button",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "name": "",
         "group": "856a31bba370e7fc",
         "order": 3,
@@ -96,7 +104,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 330,
-        "y": 160,
+        "y": 120,
         "wires": [
             []
         ]
@@ -104,7 +112,7 @@
     {
         "id": "55bcb4188e44e62d",
         "type": "ui_dropdown",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "name": "",
         "label": "My Dropdown",
         "tooltip": "",
@@ -145,7 +153,7 @@
     {
         "id": "275f06267947c907",
         "type": "ui_switch",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "name": "",
         "label": "My Switch",
         "tooltip": "",
@@ -169,7 +177,7 @@
         "animate": false,
         "className": "",
         "x": 330,
-        "y": 280,
+        "y": 520,
         "wires": [
             []
         ]
@@ -177,7 +185,7 @@
     {
         "id": "19eba95ed97bb4e7",
         "type": "ui_slider",
-        "z": "94d6d107f1742efb",
+        "z": "6e158c58de737d66",
         "name": "",
         "label": "My Slider",
         "tooltip": "",
@@ -193,8 +201,8 @@
         "max": "100",
         "step": "10",
         "className": "",
-        "x": 160,
-        "y": 200,
+        "x": 320,
+        "y": 480,
         "wires": [
             []
         ]
@@ -202,23 +210,23 @@
     {
         "id": "fe03c45b52e5a9b5",
         "type": "ui_text_input",
-        "z": "94d6d107f1742efb",
-        "group": "856a31bba370e7fc",
+        "z": "6e158c58de737d66",
         "name": "",
         "label": "My Input",
         "tooltip": "",
+        "group": "856a31bba370e7fc",
         "order": 7,
         "width": 0,
         "height": 0,
-        "topic": "topic",
-        "topicType": "msg",
+        "passthru": false,
         "mode": "text",
         "delay": 300,
-        "passthru": false,
+        "topic": "topic",
         "sendOnBlur": true,
         "className": "",
-        "x": 160,
-        "y": 240,
+        "topicType": "msg",
+        "x": 320,
+        "y": 560,
         "wires": [
             []
         ]
@@ -226,8 +234,7 @@
     {
         "id": "58d1200d4648ff7b",
         "type": "ui_chart",
-        "z": "b210791026f9bf3f",
-        "d": true,
+        "z": "6e158c58de737d66",
         "name": "My Favorite Chart",
         "group": "856a31bba370e7fc",
         "order": 3,
@@ -262,16 +269,28 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "abcd",
-        "x": 550,
+        "x": 350,
         "y": 160,
         "wires": [
             []
         ]
     },
     {
+        "id": "0df041731c3101f1",
+        "type": "ui_audio",
+        "z": "6e158c58de737d66",
+        "name": "My Audio Out",
+        "group": "856a31bba370e7fc",
+        "voice": "Microsoft David - English (United States)",
+        "always": "",
+        "x": 340,
+        "y": 80,
+        "wires": []
+    },
+    {
         "id": "ddca2be4bd1c8726",
         "type": "ui_led",
-        "z": "78ee589ecd091670",
+        "z": "6e158c58de737d66",
         "order": 8,
         "group": "856a31bba370e7fc",
         "width": 0,
@@ -295,9 +314,96 @@
         "shape": "circle",
         "showGlow": true,
         "name": "My Led",
-        "x": 990,
-        "y": 200,
+        "x": 320,
+        "y": 360,
         "wires": []
+    },
+    {
+        "id": "e57c31b8e11778bd",
+        "type": "ui_ui_control",
+        "z": "6e158c58de737d66",
+        "name": "My Control",
+        "events": "change",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fd46d95e548d6f4",
+        "type": "ui_gauge",
+        "z": "6e158c58de737d66",
+        "name": "My Favorite Gauge",
+        "group": "856a31bba370e7fc",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 350,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "0b9183b6cde724eb",
+        "type": "ui_toast",
+        "z": "6e158c58de737d66",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 330,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b52c292d531874a6",
+        "type": "ui_numeric",
+        "z": "6e158c58de737d66",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "856a31bba370e7fc",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "$ {{value}} ",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 320,
+        "y": 440,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "856a31bba370e7fc",
