@@ -13,5 +13,6 @@
   "ui_led" : "uiLed",
   "ui_audio": "uiAudio",
   "ui_control": "uiControl",
-  "ui_notification": "uiNotification"
+  "ui_notification": "uiNotification",
+  "ui_numeric": "uiNumeric"
 }
