@@ -11,6 +11,7 @@ module.exports = {
     uiChart: require('./nodes/ui-chart'),
     uiGauge: require('./nodes/ui-gauge'),
     uiLed: require('./nodes/ui-led'),
-    uiAudio: require('./nodes/ui-audio')
+    uiAudio: require('./nodes/ui-audio'),
+    uiControl: require('./nodes/ui-control')
 }
 

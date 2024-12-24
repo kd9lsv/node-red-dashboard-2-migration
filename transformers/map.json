@@ -11,6 +11,6 @@
   "ui_chart": "uiChart",
   "ui_gauge": "uiGauge",
   "ui_led" : "uiLed",
-  "ui_audio": "uiAudio"
-
+  "ui_audio": "uiAudio",
+  "ui_control": "uiControl"
 }
